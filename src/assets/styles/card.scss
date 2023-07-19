@@ -17,7 +17,8 @@
   }
 
   &__img {
-    min-width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 220px;
     object-fit: cover;
     border-bottom-left-radius: 20px;
