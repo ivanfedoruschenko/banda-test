@@ -1,0 +1,65 @@
+@import "./_variables.css";
+
+.card {
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  max-width: 490px;
+  height: auto;
+  background-color: #fff;
+  padding-right: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px black;
+
+  @media (max-width: 580px) {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  &__img {
+    min-width: 250px;
+    height: 220px;
+    object-fit: cover;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
+    @media (max-width: 580px) {
+      border-radius: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+
+    @media (max-width: 580px) {
+      margin-top: 10px;
+    }
+  }
+
+  &__element {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__paragraph {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
